@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="KGk-i7-Jjw" userLabel="Table View Cell" customClass="TableViewCell" customModule="RowAnimator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOa-0Q-BRp">
+                        <rect key="frame" x="20" y="16" width="352" height="128"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NXq-tY-aWK">
+                                <rect key="frame" x="16" y="19" width="70" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="JR4-o3-0XY"/>
+                                    <constraint firstAttribute="width" constant="70" id="gpf-GI-q7g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCm-0Q-kq8">
+                                <rect key="frame" x="102" y="19" width="40" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWA-fh-hPU">
+                                <rect key="frame" x="138" y="61.5" width="34" height="15"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="lE6-eS-xwr">
+                                <rect key="frame" x="102" y="59" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="bKh-i2-zLR"/>
+                                    <constraint firstAttribute="height" constant="20" id="d4c-Gz-sPC"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5h-Xo-C7y" customClass="ProgressView" customModule="RowAnimator" customModuleProvider="target">
+                                <rect key="frame" x="102" y="95" width="201" height="6"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="6" id="ICf-dq-sLW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="barColor">
+                                        <color key="value" systemColor="systemGray4Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CT-3D-vCD">
+                                <rect key="frame" x="311" y="90.5" width="25" height="15"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lE6-eS-xwr" firstAttribute="leading" secondItem="NXq-tY-aWK" secondAttribute="trailing" constant="16" id="8Ae-mT-Ldp"/>
+                            <constraint firstItem="NXq-tY-aWK" firstAttribute="centerY" secondItem="VOa-0Q-BRp" secondAttribute="centerY" id="AMR-Ki-aIy"/>
+                            <constraint firstItem="bWA-fh-hPU" firstAttribute="centerY" secondItem="lE6-eS-xwr" secondAttribute="centerY" id="AVl-dU-CIk"/>
+                            <constraint firstItem="V5h-Xo-C7y" firstAttribute="top" secondItem="lE6-eS-xwr" secondAttribute="bottom" constant="16" id="Ajz-r2-vG3"/>
+                            <constraint firstItem="fCm-0Q-kq8" firstAttribute="leading" secondItem="NXq-tY-aWK" secondAttribute="trailing" constant="16" id="BZD-JG-rpV"/>
+                            <constraint firstItem="V5h-Xo-C7y" firstAttribute="bottom" secondItem="NXq-tY-aWK" secondAttribute="bottom" constant="-8" id="VQk-wl-tII"/>
+                            <constraint firstItem="5CT-3D-vCD" firstAttribute="centerY" secondItem="V5h-Xo-C7y" secondAttribute="centerY" id="WKV-xV-IOs"/>
+                            <constraint firstItem="bWA-fh-hPU" firstAttribute="leading" secondItem="lE6-eS-xwr" secondAttribute="trailing" constant="16" id="clM-Vu-6bg"/>
+                            <constraint firstItem="V5h-Xo-C7y" firstAttribute="leading" secondItem="NXq-tY-aWK" secondAttribute="trailing" constant="16" id="l90-2y-7Jc"/>
+                            <constraint firstItem="NXq-tY-aWK" firstAttribute="leading" secondItem="VOa-0Q-BRp" secondAttribute="leading" constant="16" id="man-xH-5Qm"/>
+                            <constraint firstItem="5CT-3D-vCD" firstAttribute="leading" secondItem="V5h-Xo-C7y" secondAttribute="trailing" constant="8" id="oX7-UW-Q3j"/>
+                            <constraint firstItem="fCm-0Q-kq8" firstAttribute="top" secondItem="VOa-0Q-BRp" secondAttribute="top" constant="19" id="pT5-xb-rqH"/>
+                            <constraint firstAttribute="trailing" secondItem="5CT-3D-vCD" secondAttribute="trailing" constant="16" id="u9s-f4-g0h"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.20784313730000001" green="0.52156862749999999" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="VOa-0Q-BRp" secondAttribute="bottom" constant="16" id="CjM-PH-GIQ"/>
+                    <constraint firstItem="VOa-0Q-BRp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="DAc-Ll-9xb"/>
+                    <constraint firstAttribute="trailing" secondItem="VOa-0Q-BRp" secondAttribute="trailing" constant="20" symbolic="YES" id="N38-12-zDP"/>
+                    <constraint firstItem="VOa-0Q-BRp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="ZTY-oL-Xma"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorNameLabel" destination="bWA-fh-hPU" id="f2i-Ig-hVI"/>
+                <outlet property="avatarImageView" destination="lE6-eS-xwr" id="sUr-vo-i7x"/>
+                <outlet property="containerView" destination="VOa-0Q-BRp" id="qWT-GU-ug6"/>
+                <outlet property="coverImageView" destination="NXq-tY-aWK" id="acq-eD-s1f"/>
+                <outlet property="progressLabel" destination="5CT-3D-vCD" id="Ahe-8S-NyM"/>
+                <outlet property="progressView" destination="V5h-Xo-C7y" id="p2I-tF-Epc"/>
+                <outlet property="titleLabel" destination="fCm-0Q-kq8" id="YN3-ab-0Fi"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="117.1875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="1440" height="1437"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
