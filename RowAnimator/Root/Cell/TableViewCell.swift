@@ -55,7 +55,7 @@ class TableViewCell: UITableViewCell {
         authorNameLabel.text = model.authorName
         avatarImageView.image = model.authorImage
         coverImageView.image = model.coverImage
-        progressView.setProgress( Float(model.progress), animated: true)
+        progressView.setProgress( Float(model.progress * 100), animated: true)
         progressLabel.text = model.progressString
     }
 
